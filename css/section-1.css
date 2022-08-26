@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+
+/*background-color: var(--main-bg-color);*/
+
+
+#section-1 {
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 100%;
+}
+
+#header {
+  padding: 2rem;
+  box-sizing: border-box;
+  /*background: red;*/
+}
+
+#nav {
+  justify-content: space-between;
+  height: 100%;
+  /*background: rebeccapurple;*/
+}
+
+#nav img {
+  /*height: 100%;*/
+  /*object-fit: scale-down;*/
+  padding-left: 2rem;
+}
+
+#nav-links {
+  /*padding: 0 1rem;*/
+  /*flex-flow: column;*/
+  flex: 0 1 auto;
+  gap: 1rem;
+
+}
+
+#nav-links button {
+  border-radius: 0;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: var(--main-font-color);
+}
+
+#nav-links button:hover {
+  background: var(--main-font-color);
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.slogan {
+  flex-flow: column;
+  flex: 1 1 auto;
+  justify-content: center;
+  padding:4rem 2rem 0 2rem;
+  /*gap: calc(2vh - 1vw);*/
+  color: var(--main-font-color);
+  text-align: center;
+  font-size: clamp(2rem, 4vw + 3rem, 20rem);
+  font-weight: 600;
+  word-spacing: 1rem;
+}
+
+#slogan-last {
+  font-size: 105%;
+}
+
+#line-1 {
+  bottom: 0;
+}

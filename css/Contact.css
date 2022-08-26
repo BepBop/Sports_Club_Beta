@@ -1,0 +1,128 @@
+@media only screen and (max-width: 600px) {
+  .form {
+    flex-flow: column;
+  }
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: var(--secondary-bg-color);
+  /*flex-flow: column wrap;*/
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*margin-right: -50%;*/
+  /*transform: translate(-50%, -50%);*/
+
+  /*margin: auto;*/
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--main-bg-color);
+  padding: 5rem 10rem;
+
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);
+
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*background: var(--secondary-bg-color);*/
+  /*padding: 10rem 15rem;*/
+
+}
+
+.sign1 {
+
+  /*width: 600px;*/
+  font-size:6rem;
+  font-weight: 600;
+  color: var(--main-font-color);
+
+}
+
+.sign2 {
+
+  /*width: 600px;*/
+  font-size: 125%;
+  font-weight: 440;
+  color: var(--main-font-color);
+  /*padding: 1% 0 5% 0;*/
+}
+
+.form {
+ display: inline-flex;
+  /*width: 600px;*/
+  /*height: 100px;*/
+  /*background: black;*/
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.emailinput {
+
+  height: 50px;
+  width: 400px;
+  font-size: 150%;
+  border-color: var(--main-font-color);
+  transition: 1s;
+  outline: none;
+}
+
+/*.emailinput.on:valid {*/
+/*  border: 2px solid rgba(10, 255, 10, 0.90);*/
+/*  background-color: rgb(220, 255, 220);*/
+
+
+/*}*/
+
+/*.emailinput.on:invalid {*/
+/*  border: 2px solid rgba(255, 10, 10, 0.90);*/
+/*  background-color: rgb(252, 220, 220);*/
+/*}*/
+
+
+#submitBtn {
+
+  /*height: 42px;*/
+  color: var(--main-bg-color);
+  background-color:var(--main-font-color);
+  /*border: solid 2px var(--main-font-color);;*/
+  font-size: 150%;
+  cursor: pointer;
+  padding: 0 2rem;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-weight: 440;
+}
+
+#submitBtn.on {
+
+  transition: 0.5s;
+  border-color: var(--main-font-color);
+  border-style: solid;
+
+}
+
+input::placeholder {
+
+}
+
+#submitBtn.on:hover {
+
+  background-color:var(--main-font-color);
+  color: rgb(5, 24, 200);
+}
+
+input {
+  padding: 0 0.5rem;
+}

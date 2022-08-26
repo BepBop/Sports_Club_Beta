@@ -1,0 +1,43 @@
+#twoFull {
+  grid-template-rows: 100vh;
+  grid-template-columns: repeat(2, 100vw);
+  column-gap: 5%;
+  font-size: 6vmin;
+  font-weight: 600;
+  color: var(--main-font-color);
+}
+
+.Full {
+  animation: none; /*my move*/
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 100vh;
+  overflow: hidden;
+
+}
+
+@keyframes mymove {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.halfFull {
+  flex-flow: column-reverse nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image {
+  object-fit: scale-down;
+  max-width: 30vw;
+  transition: all 0.75s;
+}
+
+.image:hover {
+  transform: scale(1.1);
+  cursor: none;
+}
+

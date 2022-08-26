@@ -1,0 +1,168 @@
+<div id="section-5" class="section set-size">
+    <div class="whitewash">
+      <div class="card">
+        <div id="card-head1">We are here to do the hard and long process of creating the best you</div>
+        <div id="card-head2"> Learn more about us
+          <img alt="Learn More" src="img/LM.svg">
+        </div>
+      </div>
+    </div>
+
+    <!--    <div id="a1">Inspired By</div>-->
+
+    <ul id="a2">
+      <!--      <li>You! You! You! You!</li>-->
+      <!--      <li>You! You! You! You!</li>-->
+      <!--      <li>You! You! You! You!</li>-->
+      <li>Inspired By</li>
+      <li>You! You!</li>
+      <li>You! You!</li>
+
+    </ul>
+
+  </div>
+
+#section-5 {
+  background: var(--main-bg-color);
+  /*transition: all 0.75s ease-in-out 0.5s;*/
+}
+
+#a1 {
+  opacity: 1;
+  font-size: 12vmin;
+  padding: 4% 8%;
+  font-weight: 800;
+  /*animation: fade-in 1.5s ease-in-out forwards;*/
+  color: darkblue;
+}
+
+#a2 {
+  white-space: nowrap;
+  font-size: 19vmin;
+  word-spacing: 10vmin;
+  font-weight: 800;
+  list-style: none;
+  color: darkblue;
+  -webkit-text-stroke: 2px mediumblue;
+  -webkit-text-fill-color: transparent;
+  z-index: 0;
+  font-family: Roboto, sans-serif;
+  /*margin: unset;*/
+  /*padding: unset;*/
+  /*margin-left: 2%;*/
+}
+
+#a2 li:nth-child(1) {
+  transition: all 0.75s ease-in-out 0.25s;
+  opacity: 0;
+}
+
+#a2 li:nth-child(2) {
+  transition: all 0.75s ease-in-out 1.25s;
+  opacity: 0;
+}
+
+#a2 li:nth-child(3) {
+  transition: all 0.75s ease-in-out 2.25s;
+  opacity: 0;
+}
+
+.whitewash {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 250, 250, 0.9);
+  opacity: 0;
+  /*animation: fade-in 1s ease-in-out 3s forwards;*/
+  z-index: 999;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);
+  padding: 0 1%;
+}
+
+#card-head1 {
+  font-size: clamp(2rem, 2vw + 1rem, 10rem);
+  color: var(--main-font-color);
+  margin-top: 5%;
+  padding: 5% 5% 0 5%;
+  font-weight: 500;
+}
+
+#card-head2 {
+  align-self: flex-end;
+  display: inline-block;
+  font-size: 3vmin;
+  /*font-size: clamp(3rem, 4vw + 3rem, 20rem);;*/
+  font-weight: 300;
+  margin: 5% 0;
+  padding: 0 5% 0 5%;
+}
+
+/*@keyframes fade-in {*/
+/*  0% {*/
+/*    opacity: 0;*/
+/*  }*/
+/*  100% {*/
+/*    opacity: 1;*/
+/*  }*/
+/*}*/
+
+ // document.getElementsByClassName('black')[1].style.background = "black";
+        // document.getElementById('a1').style.animation = "fade-in 1.5s ease-in-out forwards";
+
+        document.getElementsByClassName('whitewash')[0].style.animation = "fade-in 1s ease-in-out 3s forwards";
+        let parent = document.getElementById('a2');
+        let child = parent.children;
+        child[0].style.opacity = "1";
+        child[1].style.opacity = "1";
+        child[2].style.opacity = "1";
+
+
+        // setTimeout(test, 3000);
+        //
+        // function test() {
+        //   child[0].style.transition = "none";
+        //   child[0].style.opacity = "0";
+        //   child[0].innerHTML = "You! You! You! You!";
+        //   child[0].style.transition = "all 1s ease-in-out 2s";
+        //   child[0].style.opacity = "1";
+        // }
+
+
+        // document.getElementById('section-5').style.background= "black";
+
+
+.lineUp {
+  animation: 2s anim-lineUp ease-out infinite;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

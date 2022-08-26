@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content=""/>
+  <meta property="og:type" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content=""/>
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="css/utility-classes.css">
+  <link href="./css/Contact.css" rel=stylesheet>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.all.min.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="flex set-size">
+<div class="hero">
+
+  <div class="sign1">Sign up to the <br> club! &#128512</div>
+  <div class="sign2">Coming this summer.</div>
+  <div class="form">
+    <label>
+      <input class="emailinput" placeholder="Email" required size="320" type="email">
+    </label>
+    <button id='submitBtn'
+            onclick="validateEmail()" type="button">
+      I'm Interested
+    </button>
+
+  </div>
+
+</div>
+
+<script>
+
+  function validateEmail() {
+
+    let email = document.getElementsByClassName('emailinput')[0];
+    let emailValue = email.value;
+    if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(emailValue)) {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: false,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+
+      Toast.fire({
+        icon: 'success',
+        title: '    Success! You will be notified when the club is ready.'
+      })
+    } else {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: false,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+
+      Toast.fire({
+        icon: 'error',
+        title: '    Uh oh! Please enter a valid email.'
+      })
+    }
+
+  }
+</script>
+</body>
+
+</html>

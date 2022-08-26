@@ -1,0 +1,29 @@
+#section-3 {
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  max-height: 90vh;
+  transition: 1s ease-in-out;
+  /*filter: grayscale(5%) brightness(75%);*/
+}
+
+#wide-button {
+  position: absolute;
+  background-color: rgba(1, 1, 1, 0.2);
+  color: var(--main-bg-color);
+  border: medium solid;
+  font-size: clamp(1rem, 2.5vw + 1rem, 10rem);
+  padding: 1rem 2rem;
+  transition: 1s ease-in-out;
+  font-weight: 600;
+}
+
+
+#line-3 {
+  z-index: 1;
+  height:43.5%;
+  background: var(--main-bg-color);
+}
