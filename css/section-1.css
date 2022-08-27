@@ -38,7 +38,7 @@
   border-radius: 0;
   border: none;
   background: none;
-  font-size: 2rem;
+  font-size: 2rem; !important;
   font-weight: 600;
   padding: 1rem 2rem;
   color: var(--main-font-color);
@@ -58,8 +58,8 @@
   /*gap: calc(2vh - 1vw);*/
   color: var(--main-font-color);
   text-align: center;
-  font-size: clamp(2rem, 4vw + 3rem, 20rem);
-  font-weight: 600;
+  font-size: clamp(1.5rem, 3.5vw + 3.25rem, 20rem);
+  font-weight: 770;
   word-spacing: 1rem;
 }
 
