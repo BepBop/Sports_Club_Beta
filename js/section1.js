@@ -1,8 +1,8 @@
 //blue line passing through
-let last_slogan_bottom = document.getElementById("last").getBoundingClientRect().bottom;
+let last_slogan_bottom = document.getElementById("slogan-last").getBoundingClientRect().bottom;
 const line_1 = document.getElementById("line-1");
 line_1.style.height = `calc(100% - ${last_slogan_bottom}px)`;
-
+console.log(line_1.style.height);
 //
 // //slogan flexbox height
 // let nav_height = document.getElementsByTagName("nav")[0].getBoundingClientRect().height;
