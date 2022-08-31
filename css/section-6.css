@@ -1,3 +1,4 @@
+
 #achievements {
   grid-template-rows: 90vh 10vh;
   font-size: 19vmin;
@@ -49,6 +50,3 @@
   }
 }
 
-label {
-  display:none;
-}

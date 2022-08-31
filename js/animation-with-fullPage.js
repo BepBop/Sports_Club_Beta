@@ -30,8 +30,8 @@ import(fullPage_url).then(() => {
 
       //after leaving section 3
       if (origin.index == 2 && direction == 'down') {
-        document.getElementsByClassName('Full')[0].style.animation = "mymove 3s ease-out";
-        document.getElementsByClassName('Full')[1].style.animation = "mymove 3s ease-out";
+        document.getElementsByClassName('Full')[0].style.animation = "mymove 2.7s ease-out";
+        document.getElementsByClassName('Full')[1].style.animation = "mymove 2.7s ease-out";
       }
 
 
