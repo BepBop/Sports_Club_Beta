@@ -32,7 +32,7 @@
 
 .image {
   object-fit: scale-down;
-  max-width: 30vw;
+  max-width: 26vw;
   transition: all 0.75s;
 }
 
